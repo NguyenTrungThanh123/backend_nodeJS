@@ -4,7 +4,8 @@
   "description": "IT Equipment Manager",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/server.js"
   },
   "keywords": [
     "nodeJS",
@@ -13,6 +14,12 @@
   "author": "Thanh Nguyen",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.0.0-beta.2"
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^5.0.0-beta.2",
+    "mysql2": "^3.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

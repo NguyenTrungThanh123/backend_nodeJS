@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/create">create User</a>
+    </div>
+    <%= UserUpdate.email %>
+        <form action="/update-user/<%= UserUpdate.id %>" method="PUT" id="form1">
+            <fieldset>
+
+                <legend>Update users:</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="<%= UserUpdate.email %>"><br><br>
+                <label for="lname">Name:</label>
+                <input type="text" id="lname" name="lname" value="<%= UserUpdate.name %>"><br><br>
+                <label for="birthday">City:</label>
+                <input type="text" id="city" name="city" value="<%= UserUpdate.city %>"><br><br>
+                <button type="submit" form="form1" value="Submit">Update</button>
+            </fieldset>
+
+        </form>
+
+
+
+</body>
+
+</html>
